@@ -19,6 +19,9 @@
 :root {
     --text-primary: #041827;
     --text-secondary: #4A5A67;
+
+    --theme-primary: #4743F5;
+    --theme-secondary: #041827;
 }
 
 body {
@@ -61,10 +64,107 @@ nav {
     line-height: 36px;
 }
 
-#hero .btn {
-    margin-top: 48px;
+#hero button {
+    margin-top: 42px;
 }
 
+
+
+
+
+/* Design Systen */
+h1 {
+    color: var(--text-primary, #041827);
+    font-family: Manrope;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: -1.6px;
+}
+
+h2 {
+    color: var(--text-primary, #041827);
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 133.333% */
+    letter-spacing: -0.96px;
+}
+
+h3 {
+    color: var(--text-primary, #041827);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.sub-heading {
+    color: var(--text-primary, #041827);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.medium-text {
+    color: #041827;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+
+.reguler-text {
+    color: var(--text-secondary, #4A5A67);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+/*  */
+button {
+    display: inline-flex;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-primary {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    border-radius: 4px;
+    background: var(--theme-primary, #4743F5);
+}
+
+.button-secondary {
+    color: #041827;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    border-radius: 4px;
+    border: 1px solid var(--theme-secondary, #041827);
+}
 
 @media screen and (max-width: 768px) {
     #hero {
@@ -91,5 +191,9 @@ nav {
 
     .hero2 {
         order: 1;
+    }
+
+    button {
+        padding: 9px 16px;
     }
 }
