@@ -22,16 +22,26 @@
 
     --theme-primary: #4743F5;
     --theme-secondary: #041827;
+    --theme-base: #F5F7FC;
+}
+
+section {
+    background-color: var(--theme-base);
+}
+
+/* font-color */
+.text-primary {
+    color: var(--text-primary, #041827);
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+/* .container {
     padding-left: 50px;
     padding-right: 50px;
-}
+} */
 
 nav {
     /* background: rgba(245, 247, 252, 0.70); */
@@ -68,10 +78,6 @@ nav {
     margin-top: 42px;
 }
 
-
-
-
-
 /* Design Systen */
 h1 {
     color: var(--text-primary, #041827);
@@ -90,7 +96,6 @@ h2 {
     font-style: normal;
     font-weight: 700;
     line-height: 64px;
-    /* 133.333% */
     letter-spacing: -0.96px;
 }
 
@@ -154,6 +159,17 @@ button {
     background: var(--theme-primary, #4743F5);
 }
 
+/* .button-primary {
+    display: inline-flex;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 4px;
+    background: var(--theme-primary, #D0920B);
+} */
+
 .button-secondary {
     color: #041827;
     font-family: Manrope;
@@ -166,9 +182,55 @@ button {
     border: 1px solid var(--theme-secondary, #041827);
 }
 
+
+#introduction {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+#introduction .iframe {
+    margin-top: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services {
+    margin-top: 100px;
+}
+
+
+#why {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-why {
+    display: flex;
+    padding: 36px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    border-radius: 10px;
+    background: #F5F7FC;
+    box-shadow: 0px 20px 100px 0px rgba(125, 120, 197, 0.10);
+}
+
+
+#portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 @media screen and (max-width: 768px) {
     #hero {
-        padding-top: 100px;
+        padding-top: 60px;
     }
 
     #hero h1 {
@@ -193,7 +255,44 @@ button {
         order: 1;
     }
 
-    button {
-        padding: 9px 16px;
+    #introduction .iframe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
     }
+
+
+    footer {
+        padding-bottom: 0;
+    }
+
+    footer .reguler-text {
+        font-size: 14px;
+    }
+
+    footer .mt-24 {
+        margin-top: 10px;
+    }
+
+    footer h3 {
+        margin-top: 25px;
+    }
+}
+
+
+/* footer */
+footer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /* padding-bottom: 200px; */
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.icon-medsos {
+    margin-right: 32px;
 }
