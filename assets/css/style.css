@@ -20,7 +20,7 @@
     --text-primary: #041827;
     --text-secondary: #4A5A67;
 
-    --theme-primary: #4743F5;
+    --theme-primary: #D0920B;
     --theme-secondary: #041827;
     --theme-base: #F5F7FC;
 }
@@ -48,6 +48,32 @@ nav {
     backdrop-filter: blur(50px);
 }
 
+nav .nav-link {
+    color: var(--text-secondary, #4A5A67);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+nav .nav-link:hover {
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+nav .active {
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 #hero {
     padding-top: 172px;
@@ -110,7 +136,7 @@ h3 {
 }
 
 .sub-heading {
-    color: var(--text-primary, #041827);
+    color: var(--theme-primary);
     font-family: Manrope;
     font-size: 20px;
     font-style: normal;
@@ -157,18 +183,8 @@ button {
     letter-spacing: -0.32px;
     border-radius: 4px;
     background: var(--theme-primary, #4743F5);
+    border: none;
 }
-
-/* .button-primary {
-    display: inline-flex;
-    padding: 18px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    border-radius: 4px;
-    background: var(--theme-primary, #D0920B);
-} */
 
 .button-secondary {
     color: #041827;
@@ -188,11 +204,9 @@ button {
     padding-bottom: 100px;
 }
 
-#introduction .iframe {
-    margin-top: 78px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#introduction .text {
+    padding-left: 320px;
+    padding-right: 320px;
 }
 
 #services {
@@ -228,7 +242,75 @@ button {
     padding-bottom: 50px;
 }
 
+#portfolio .see {
+    color: var(--text-primary, #041827);
+    text-align: center;
+
+    /* Sub Header */
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+#portfolio .frame {
+    margin-top: 48px;
+}
+
+#portfolio .title {
+    margin-top: 24px;
+}
+
+#portfolio .sub-title {
+    margin-top: 0;
+}
+
+.contact {
+    border-radius: 16px;
+    background: var(--text-primary, #041827);
+
+    display: flex;
+    padding: 56px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+
+.contact .text-contact {
+    color: #FFF;
+    text-align: center;
+
+    /* Heading 2 */
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 133.333% */
+    letter-spacing: -0.96px;
+
+    padding-right: 250px;
+    padding-left: 250px;
+}
+
 @media screen and (max-width: 768px) {
+    .reguler-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
     #hero {
         padding-top: 60px;
     }
@@ -255,14 +337,62 @@ button {
         order: 1;
     }
 
-    #introduction .iframe {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+
+    #introduction {
+        margin-top: -50px;
+        padding-bottom: 0;
+    }
+
+    #introduction iframe {
         height: 100%;
         width: 100%;
     }
 
+    #introduction .text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services {
+        margin-top: 40px;
+    }
+
+    #portfolio .see {
+        margin-top: -30px;
+        margin-bottom: 10px;
+    }
+
+    #portfolio .frame {
+        margin-top: 16px;
+    }
+
+    #portfolio .title {
+        margin-top: 10px;
+    }
+
+    #portfolio .sub-title {
+        margin-top: -5px;
+        margin-bottom: 30px;
+    }
+
+    #why {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .contact .text-contact {
+        font-size: 28px;
+        line-height: 36px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 
     footer {
         padding-bottom: 0;
@@ -289,10 +419,27 @@ footer {
     /* padding-bottom: 200px; */
 }
 
-.mt-24 {
+footer .medsos {
     margin-top: 24px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .icon-medsos {
     margin-right: 32px;
+
+}
+
+
+
+
+
+
+
+/* beda halaman */
+.bg-hero-services {
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255, 251, 235, 0.69) 0%, #E4FFEC 25%, #F1F5FF 50%, #FFFEED 75%, #E4FFFA 100%);
 }
